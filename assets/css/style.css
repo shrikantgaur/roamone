@@ -218,6 +218,9 @@ header .navigation .request-menus a span {
 /* Header Section End */
 
 /* Section One */
+.top-selling-section, .selling-feature-section {
+    padding: 80px 0;
+}
 .section-one {
     /* background: rgb(225, 29, 112); */
     background: linear-gradient(90deg, rgba(225, 29, 112, 1) 0%, rgba(248, 128, 18, 1) 100%);
@@ -243,7 +246,6 @@ header .navigation .request-menus a span {
 .sim-cards-col {
     text-align: center;
     width: 100%;
-    padding: 80px 0;
     z-index: 2;
 }
 
@@ -347,3 +349,21 @@ header .navigation .request-menus a span {
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
+
+/** Selling Feature Section **/
+.selling-feature-section .featues-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.selling-feature-section .feature-item {
+    width: 23%;
+}
+
+.selling-feature-section .feature-inner {
+    display: flex;
+    gap: 10px;
+}
+
+/** Selling Feature Section End **/

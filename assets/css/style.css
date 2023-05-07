@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Mulish:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
 *,
 ::after,
 ::before {
@@ -214,14 +215,135 @@ header .navigation .request-menus a span {
     margin-left: 10px;
 }
 
+/* Header Section End */
+
+/* Section One */
 .section-one {
-    background: rgb(225,29,112);
-    background: linear-gradient(90deg, rgba(225,29,112,1) 0%, rgba(248,128,18,1) 100%);
+    /* background: rgb(225, 29, 112); */
+    background: linear-gradient(90deg, rgba(225, 29, 112, 1) 0%, rgba(248, 128, 18, 1) 100%);
 }
 
 .cards-items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-/* Header Section End */
+
+.main-heading {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.sim-cards-col {
+    text-align: center;
+    width: 100%;
+    padding: 80px 0;
+    z-index: 2;
+}
+
+.section-one {
+    position: relative;
+}
+
+.section-one:before {
+    content: '';
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background-image: url(file:///var/www/html/roam/images/air-icon2.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.section-one:after {
+    content: '';
+    position: absolute;
+    bottom: -295px;
+    left: -55px;
+    width: 100%;
+    height: 100%;
+    background-image: url(file:///var/www/html/roam/images/air-icon.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.sim-cards-col .cards-heading-box {
+    margin-bottom: 50px;
+}
+
+.sim-cards-col .sim-cards-search {
+    margin: 80px 0 20px 0;
+}
+
+.sim-cards-col .card-title {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 34px;
+    color: #5B5F62;
+    margin-bottom: 0;
+}
+
+.sim-cards-col .cards-item {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sim-cards-col .card-search-input {
+    padding: 18px 20px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    border: none;
+}
+
+.sim-cards-col .card-search-input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #455A64;
+}
+
+.sim-cards-col .search-button {
+    background: #7519A3;
+    box-shadow: 0px 5px 14px rgba(247, 103, 67, 0.25);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 14px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+
+.sim-cards-col .search-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.sim-cards-col .visiter-count {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}

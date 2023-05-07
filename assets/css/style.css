@@ -220,7 +220,8 @@ header .navigation .request-menus a span {
 /* Section One */
 .top-selling-section,
 .selling-feature-section,
-.destination-section {
+.destination-section,
+.esim-section {
     padding: 80px 0;
 }
 
@@ -372,14 +373,15 @@ header .navigation .request-menus a span {
 /** Selling Feature Section End **/
 
 /** Destination Section **/
-.destination-section .dest-heading {
+.destination-section .dest-heading,
+.esim-heading {
     font-size: 40px;
     line-height: 56px;
     text-transform: capitalize;
     color: #2D3134;
 }
 
-.destination-section .heading-pink {
+.heading-pink {
     color: #E11D70;
 }
 
@@ -484,3 +486,38 @@ header .navigation .request-menus a span {
 }
 
 /** Destination Section End **/
+/** Background Destination Vector **/
+.bg-destination-vector {
+    position: relative;
+}
+
+.bg-destination-vector:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 788px;
+    background-image: url(file:///var/www/html/roam/images/Vector.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/** Background Destination Vector End **/
+
+/** eSim Section **/
+.esim-section .feature-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.esim-section .feature-item {
+    width: 32%;
+}
+
+.esim-section .esim-top {
+    margin-bottom: 40px;
+}
+
+/** eSim Section End **/

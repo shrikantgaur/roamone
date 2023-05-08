@@ -41,11 +41,13 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-family: 'Mulish';
 }
 
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: 'Mulish';
 }
 
 h1 {
@@ -221,7 +223,8 @@ header .navigation .request-menus a span {
 .top-selling-section,
 .selling-feature-section,
 .destination-section,
-.esim-section {
+.esim-section,
+.compatible-devices-section {
     padding: 80px 0;
 }
 
@@ -244,6 +247,9 @@ header .navigation .request-menus a span {
     font-size: 36px;
     line-height: 34px;
     letter-spacing: 0.02em;
+}
+
+.selling-heading {
     color: #FFFFFF;
 }
 
@@ -377,7 +383,6 @@ header .navigation .request-menus a span {
 .esim-heading {
     font-size: 40px;
     line-height: 56px;
-    text-transform: capitalize;
     color: #2D3134;
 }
 
@@ -385,7 +390,7 @@ header .navigation .request-menus a span {
     color: #E11D70;
 }
 
-.destination-section .dest-desc {
+.heading-description {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 500;
@@ -520,4 +525,78 @@ header .navigation .request-menus a span {
     margin-bottom: 40px;
 }
 
+.esim-section .esim-desc {
+    max-width: 600px;
+}
+
+.esim-section .feature-title {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #2D3134;
+}
+
 /** eSim Section End **/
+
+/** Compatible Devices Section **/
+.compatible-row {
+    justify-content: space-between;
+}
+
+.device-tech-heading {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tech-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #5B5F62;
+}
+
+.devices-box {
+    margin-top: 30px;
+}
+
+.compatible-devices-section .model-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.compatible-devices-section .model-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    color: #7694A2;
+    background: rgba(38, 50, 56, 0.1);
+    border-radius: 6px;
+    padding: 0px 14px;
+}
+
+.compatible-image {
+    position: relative;
+}
+
+.compatible-image:before {
+    content: '';
+    position: absolute;
+    top: -81px;
+    left: -246px;
+    width: 250px;
+    height: 420px;
+    background-image: url(file:///var/www/html/roam/images/esim-air-bg.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/** Compatible Devices Section End **/

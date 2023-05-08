@@ -124,6 +124,10 @@ h6 {
     margin-left: -15px;
 }
 
+.col-half {
+    width: 50%;
+}
+
 .hidden {
     display: none;
 }
@@ -224,7 +228,8 @@ header .navigation .request-menus a span {
 .selling-feature-section,
 .destination-section,
 .esim-section,
-.compatible-devices-section {
+.compatible-devices-section,
+.about-room-section {
     padding: 80px 0;
 }
 
@@ -600,3 +605,50 @@ header .navigation .request-menus a span {
 }
 
 /** Compatible Devices Section End **/
+
+/** About Roam Devices Section **/
+.about-room-section {
+    background: #FAF8ED;
+}
+
+.about-roam-row {
+    align-items: center;
+}
+
+.about-room-section .headings-box {
+    margin-bottom: 30px;
+}
+
+.about-room-section .feature-des {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #939597;
+    margin: 0;
+}
+
+.about-room-section .feature-title {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 46px;
+    color: #F66F4D;
+}
+
+.about-room-section .feature-items {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-room-section .feature-item {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    padding: 20px;
+}

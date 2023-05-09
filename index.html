@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roamone</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
@@ -375,6 +376,142 @@
     </section>
     <!-- About Roam and FAQ Devices Section End -->
 
+    <!-- FAQS Section -->
+    <section class="seventh-section faqs-section">
+        <div class="container">
+            <div class="row top-heading-row">
+                <div class="col-half ">
+                    <div class="faq-heading">
+                        <h2 class="main-heading faqs-heading"> <span class="heading-pink">Frequently Asked
+                                Questions</span>
+                        </h2>
+                        <p class="heading-description faqs-desc">The Roam1 SIM Card allows you to talk to everyone you
+                            want
+                            to, while you explore any of these locations.</p>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <div class="destination-button"> <a href="#" target="_blank" class="destination-more">See all
+                            FAQ's</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row faqs-row">
+                <div class="col-half">
+                    <div class="faqs-content">
+                        <div class="faq">
+                            <div class="question-answer-box">
+                                <div class="question">
+                                    <div class="question-box">
+                                        <div class="question-heading">
+                                            <h2 class="question-title">When does my data plan start?</h2>
+                                        </div>
+                                        <div class="arrow-icon">
+                                            <img src="./images/chevron.png" class="arrow" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Your plan starts to count down the moment you activate your eSIM by scanning the
+                                        QR code on your smartphone.</p>
+                                </div>
+                            </div>
+                            <div class="question-answer-box">
+                                <div class="question">
+                                    <div class="question-box">
+                                        <div class="question-heading">
+                                            <h2 class="question-title">Can I make phone calls and send SMS with eSIM?
+                                            </h2>
+                                        </div>
+                                        <div class="arrow-icon">
+                                            <img src="./images/chevron.png" class="arrow" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Your plan starts to count down the moment you activate your eSIM by scanning the
+                                        QR code on your smartphone.</p>
+                                </div>
+                            </div>
+                            <div class="question-answer-box">
+                                <div class="question">
+                                    <div class="question-box">
+                                        <div class="question-heading">
+                                            <h2 class="question-title">Which devices work with the eSIM card?</h2>
+                                        </div>
+                                        <div class="arrow-icon">
+                                            <img src="./images/chevron.png" class="arrow" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Your plan starts to count down the moment you activate your eSIM by scanning the
+                                        QR code on your smartphone.</p>
+                                </div>
+                            </div>
+                            <div class="question-answer-box">
+                                <div class="question">
+                                    <div class="question-box">
+                                        <div class="question-heading">
+                                            <h2 class="question-title">When will I receive my eSIM?</h2>
+                                        </div>
+                                        <div class="arrow-icon">
+                                            <img src="./images/chevron.png" class="arrow" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Your plan starts to count down the moment you activate your eSIM by scanning the
+                                        QR code on your smartphone.</p>
+                                </div>
+                            </div>
+                            <div class="question-answer-box">
+                                <div class="question">
+                                    <div class="question-box">
+                                        <div class="question-heading">
+                                            <h2 class="question-title"> Can I keep my WhatsApp number?</h2>
+                                        </div>
+                                        <div class="arrow-icon">
+                                            <img src="./images/chevron.png" class="arrow" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Your plan starts to count down the moment you activate your eSIM by scanning the
+                                        QR code on your smartphone.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-half">
+                    <div class="faqs-image">
+                        <img src="./images/Online friends-bro.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            /** FAQ's collapse  **/
+            var allQuestions = document.querySelectorAll(".question");
+
+            allQuestions.forEach((question) => {
+                question.addEventListener("click", () => {
+                    const answer = question.nextElementSibling;
+                    const arrow = question.querySelector(".arrow");
+                    if (answer.style.display === "block") {
+                        answer.style.display = "none";
+                        arrow.classList.remove("down");
+                    } else {
+                        answer.style.display = "block";
+                        arrow.classList.add("down");
+                    }
+                });
+            });
+        </script>
+    </section>
+    <!-- FAQS Section End -->
 </body>
 
 </html>

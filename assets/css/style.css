@@ -440,7 +440,7 @@ header .navigation .request-menus a span {
     text-align: right;
 }
 
-.destination-section  .location-inner {
+.destination-section .location-inner {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -448,7 +448,7 @@ header .navigation .request-menus a span {
     height: 100%;
 }
 
-.destination-section  .location-title-box {
+.destination-section .location-title-box {
     align-self: self-start;
 }
 
@@ -487,7 +487,7 @@ header .navigation .request-menus a span {
 
 .location-item:nth-child(2):before {
     background-image: url(file:///var/www/html/roam/images/air-dest-bg.png);
-    top:60px;
+    top: 60px;
 }
 
 .location-item:nth-child(3):before {
@@ -878,21 +878,24 @@ header .navigation .request-menus a span {
     margin: 0;
 }
 
+li.item-nav a {
+    text-decoration: none;
+}
 .item-nav i {
     color: #fff;
-    text-align: center;
-}
-
-.social-items a {
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    padding: 10px;
 }
 
-.social-items a:hover {
-    background: #fc5710;
+.item-nav i:hover {
+    background: #F88012;
+    border-color:#F88012;
 }
-
 /** Footer Section End **/
 
 /* Response Start */

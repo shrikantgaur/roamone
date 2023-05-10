@@ -751,3 +751,132 @@ header .navigation .request-menus a span {
     color: rgba(60, 60, 67, 0.85);
     margin: 10px 0 0 0;
 }
+
+/** Footer section **/
+.footer-section {
+    background-image: url(file:///var/www/html/roam/images/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+.footer-section .footer-column {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section .footer-desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(230, 230, 230, 0.99);
+}
+
+.footer-section .connect-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 34px;
+    color: #E5E5E5;
+}
+
+.footer-section .menus-items a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.footer-section h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #E5E5E5;
+    margin-bottom: 25px;
+}
+
+.footer-section .menus-items a:hover {
+    text-decoration: none;
+    color: rgb(225, 29, 112) !important;
+}
+
+.subscribe-form .subscribe-input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E5E5E5;
+}
+
+.subscribe-form .subscribe-input {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 55px 20px 20px;
+    border: none;
+}
+
+.subscribe-form fieldset {
+    position: relative;
+    padding: 0;
+    border: none;
+    display: flex;
+}
+
+.subscribe-form .subscribe-btn {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: transparent;
+    top: 4px;
+    cursor: pointer;
+}
+
+.social-items {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.item-nav i {
+    color: #fff;
+    text-align: center;
+}
+
+.social-items a {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social-items a:hover {
+    background: #fc5710;
+}
+
+/** Footer Section End **/

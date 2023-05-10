@@ -20,43 +20,63 @@
                     <div class="logo">
                         <img src="./images/header-logo.png" alt="Logo">
                     </div>
+                    <div class="mobile-menu-toggle">
+                        <button class="menu-toggle">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
                 </div>
-                <div class="navigation-col">
-                    <div class="navigation main-navigation">
-                        <nav class="main-menus menus-items">
-                            <ul>
-                                <li class="menus-item active"><a href="#">Destination</a></li>
-                                <li class="menus-item"><a href="#">Wholesale</a></li>
-                                <li class="menus-item"><a href="#">About Us</a></li>
-                                <li class="menus-item"><a href="#">Contact Us</a></li>
-                            </ul>
-                        </nav>
+                <div class="header-navigation">
+                    <div class="navigation-col">
+                        <div class="navigation main-navigation">
+                            <nav class="main-menus menus-items">
+                                <ul>
+                                    <li class="menus-item active"><a href="#">Destination</a></li>
+                                    <li class="menus-item"><a href="#">Wholesale</a></li>
+                                    <li class="menus-item"><a href="#">About Us</a></li>
+                                    <li class="menus-item"><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="navigation left-navigation">
+                            <nav class="top-secondary-menus menus-items">
+                                <ul>
+                                    <li class="menus-item cart-menus">
+                                        <a href="#">
+                                            <img src="./images/cart-icon.png" alt=""> <span
+                                                class="cart-text hidden">Cart
+                                                <span class="cart-count">(0)</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="menus-item quick-menus">
+                                        <a href="#">
+                                            <img src="./images/pay1.png" alt=""> <span
+                                                class="rounded-btn quick-pay-btn">Quick
+                                                pay</span>
+                                        </a>
+                                    </li>
+                                    <li class="menus-item request-menus">
+                                        <a href="#">
+                                            <img src="./images/call-icon.png" alt=""> <span
+                                                class="rounded-btn Request-btn">Request a call back</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                    <div class="navigation left-navigation">
-                        <nav class="top-secondary-menus menus-items">
-                            <ul>
-                                <li class="menus-item cart-menus">
-                                    <a href="#">
-                                        <img src="./images/cart-icon.png" alt=""> <span class="cart-text hidden">Cart
-                                            <span class="cart-count">(0)</span></span>
-                                    </a>
-                                </li>
-                                <li class="menus-item quick-menus">
-                                    <a href="#">
-                                        <img src="./images/pay1.png" alt=""> <span
-                                            class="rounded-btn quick-pay-btn">Quick
-                                            pay</span>
-                                    </a>
-                                </li>
-                                <li class="menus-item request-menus">
-                                    <a href="#">
-                                        <img src="./images/call-icon.png" alt=""> <span
-                                            class="rounded-btn Request-btn">Request a call back</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+
+                            const nav = document.querySelector('.header-navigation');
+                            const toggleBtn = document.querySelector('.menu-toggle');
+
+                            toggleBtn.addEventListener('click', function () {
+                                nav.classList.toggle('mobile-menus');
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>

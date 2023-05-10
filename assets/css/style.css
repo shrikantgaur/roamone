@@ -880,3 +880,49 @@ header .navigation .request-menus a span {
 }
 
 /** Footer Section End **/
+
+/* Response Start */
+@media screen and (min-width: 992px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header-navigation {
+        display: none;
+    }
+
+    .mobile-menus {
+        display: block;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+    }
+
+    .navigation.main-navigation {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .menus-items ul {
+        flex-direction: column;
+    }
+
+    .logo-col {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .navigation .menus-item {
+        border-radius: 10px;
+        border: solid 1px #ccc;
+    }
+}

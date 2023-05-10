@@ -440,6 +440,18 @@ header .navigation .request-menus a span {
     text-align: right;
 }
 
+.destination-section  .location-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+.destination-section  .location-title-box {
+    align-self: self-start;
+}
+
 .destination-section .location-item {
     width: 24%;
     background: linear-gradient(180deg, rgba(249, 138, 37, 0.79) 0%, #F98A25 100%);
@@ -475,6 +487,7 @@ header .navigation .request-menus a span {
 
 .location-item:nth-child(2):before {
     background-image: url(file:///var/www/html/roam/images/air-dest-bg.png);
+    top:60px;
 }
 
 .location-item:nth-child(3):before {
@@ -483,6 +496,7 @@ header .navigation .request-menus a span {
 
 .location-item:nth-child(4):before {
     background-image: url(file:///var/www/html/roam/images/canda-air-icon.png);
+    right: 0;
 }
 
 .location-item:before {

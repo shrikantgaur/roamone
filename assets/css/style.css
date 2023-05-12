@@ -531,6 +531,155 @@ header .navigation .request-menus a span {
 
 /** Background Destination Vector End **/
 
+/** Testimonial Section **/
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    /*height: auto;*/
+    overflow: hidden;
+}
+
+.testimonial-slide {
+    transition: opacity 0.5s ease;
+}
+
+.testimonial-slide {
+    display: none;
+}
+
+.testimonial-slide.active {
+    opacity: 1;
+    display: block;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-content {
+    width: 60%;
+    position: relative;
+}
+
+.testimonial-text:before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    top: -60px;
+    left: 0;
+    position: absolute;
+    background-image: url(file:///var/www/html/roam/images/Quotes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.testimonial-text:after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 100px;
+    position: absolute;
+    background-image: url(file:///var/www/html/roam/images/quote-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.testimonial-image {
+    width: 40%;
+    text-align: right;
+}
+
+.testimonial-text {
+    font-family: 'Mulish';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    color: #263238;
+}
+
+.testimonial-author {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 33px;
+    color: #263238;
+}
+
+.testimonial-destination {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #F66F4D;
+}
+
+.inverted-comma {
+    font-size: 150px;
+    color: #E11D70;
+    position: absolute;
+}
+
+.start-comma {
+    left: -12px;
+}
+
+.end-comma {
+    right: 0;
+}
+
+span.inverted-comma.end-comma {}
+
+.testimonial-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.testimonial-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.testimonial-dot.active {
+    background-color: black;
+}
+
+/** Testimonial Section **/
+
 /** eSim Section **/
 .esim-section .feature-items {
     display: flex;
@@ -881,6 +1030,7 @@ header .navigation .request-menus a span {
 li.item-nav a {
     text-decoration: none;
 }
+
 .item-nav i {
     color: #fff;
     border: solid 1px rgba(255, 255, 255, 0.6);
@@ -894,8 +1044,9 @@ li.item-nav a {
 
 .item-nav i:hover {
     background: #F88012;
-    border-color:#F88012;
+    border-color: #F88012;
 }
+
 /** Footer Section End **/
 
 /* Response Start */

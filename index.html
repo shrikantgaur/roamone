@@ -252,6 +252,103 @@
     </section>
     <!-- Select Destination Section End -->
 
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-container">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Nesciunt et facilis atque incidunt qui
+                                voluptatem non. Facere id
+                                voluptatem dolore velit a. Laborum dolorum voluptatibus deleniti id id quo ea voluptate
+                                incidunt. Laborum reiciendis qui aut officia doloribus veniam quidem dignissimos id. Et
+                                aut vel. umquam quo asperiores impedit aut. Optio dolorem eum quia.
+                            </p>
+                            <p class="testimonial-author">Billie Armstrong1</p>
+                            <p class="testimonial-destination">International Program Developer</p>
+                        </div>
+                        <div class="testimonial-image">
+                            <img src="./images/testimonial-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Nesciunt et facilis atque incidunt qui
+                                voluptatem non. Facere id
+                                voluptatem dolore velit a. Laborum dolorum voluptatibus deleniti id id quo ea voluptate
+                                incidunt. Laborum reiciendis qui aut officia doloribus veniam quidem dignissimos id. Et
+                                aut vel. umquam quo asperiores impedit aut. Optio dolorem eum quia.
+                            </p>
+                            <p class="testimonial-author">Billie Armstrong2</p>
+                            <p class="testimonial-destination">International Program Developer</p>
+                        </div>
+                        <div class="testimonial-image">
+                            <img src="./images/testimonial-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-wrapper">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                Nesciunt et facilis atque incidunt qui
+                                voluptatem non. Facere id
+                                voluptatem dolore velit a. Laborum dolorum voluptatibus deleniti id id quo ea voluptate
+                                incidunt. Laborum reiciendis qui aut officia doloribus veniam quidem dignissimos id. Et
+                                aut vel. umquam quo asperiores impedit aut. Optio dolorem eum quia.
+                            </p>
+                            <p class="testimonial-author">Billie Armstrong3</p>
+                            <p class="testimonial-destination">International Program Developer</p>
+                        </div>
+                        <div class="testimonial-image">
+                            <img src="./images/testimonial-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots"></div>
+            <div class="dots-container">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+        </div>
+        <script>
+            let testimonials = document.querySelectorAll(".testimonial-slide");
+            let dots = document.querySelectorAll(".dot");
+            let currentTestimonial = 0;
+            let interval = 5000;
+
+            function showTestimonial(n) {
+                testimonials[currentTestimonial].classList.remove("active");
+                dots[currentTestimonial].classList.remove("active");
+                currentTestimonial = (n + testimonials.length) % testimonials.length;
+                testimonials[currentTestimonial].classList.add("active");
+                dots[currentTestimonial].classList.add("active");
+            }
+
+            function autoPlay() {
+                setInterval(function () {
+                    showTestimonial(currentTestimonial + 1);
+                }, interval);
+            }
+
+            autoPlay();
+
+            dots.forEach(function (dot, index) {
+                dot.addEventListener("click", function () {
+                    showTestimonial(index);
+                });
+            });
+        </script>
+    </section>
+    <!-- Testimonial Section End-->
+
     <!-- eSim Section -->
     <section class="section-four esim-section">
         <div class="container">

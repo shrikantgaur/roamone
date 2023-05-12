@@ -230,7 +230,8 @@ header .navigation .request-menus a span {
 .esim-section,
 .compatible-devices-section,
 .about-roam-section,
-.faqs-section {
+.faqs-section,
+.testimonial-section {
     padding: 80px 0;
 }
 
@@ -532,6 +533,26 @@ header .navigation .request-menus a span {
 /** Background Destination Vector End **/
 
 /** Testimonial Section **/
+.testimonial-vector-two {
+    position: relative;
+}
+
+.testimonial-vector-two:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 697px;
+    height: 848px;
+    background-image: url(file:///var/www/html/roam/images/Vector2.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.testimonial-section {
+    padding: 80px 0;
+}
+
 .testimonial-container {
     position: relative;
     width: 100%;
@@ -552,25 +573,26 @@ header .navigation .request-menus a span {
     display: block;
 }
 
-.dots-container {
+.testimonial-container .dots-container {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.dot {
+.testimonial-container .dot {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: gray;
-    margin: 0 10px;
+    margin: 0 5px;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
-.dot.active {
-    background-color: black;
+.testimonial-container .dot.active {
+    background-color: #F66F4D;
 }
 
 .testimonial-wrapper {
@@ -601,7 +623,7 @@ header .navigation .request-menus a span {
     content: '';
     width: 60px;
     height: 60px;
-    bottom: 30px;
+    bottom: 80px;
     right: 100px;
     position: absolute;
     background-image: url(file:///var/www/html/roam/images/quote-left.png);
@@ -630,6 +652,7 @@ header .navigation .request-menus a span {
     font-size: 26px;
     line-height: 33px;
     color: #263238;
+    margin-top: 60px;
 }
 
 .testimonial-destination {

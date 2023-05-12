@@ -184,6 +184,15 @@ header .navigation .menus-item.active a {
     color: #FC5710;
 }
 
+header .navigation .menus-item:hover {
+    background: rgba(252, 87, 16, 0.1);
+}
+
+header .navigation .menus-item:hover a {
+    color: #FC5710;
+}
+
+
 header .navigation .cart-menus {
     width: 40px;
     height: 40px;
@@ -296,6 +305,23 @@ header .navigation .request-menus a span {
 
 .sim-cards-col .cards-heading-box {
     margin-bottom: 50px;
+    position: relative;
+}
+
+.sim-cards-col .cards-heading-box {
+    position: relative;
+}
+
+.sim-cards-col .cards-heading-box:before {
+    content: '';
+    position: absolute;
+    width: 153px;
+    height: 166px;
+    top: -45px;
+    left: 22px;
+    background-image: url(file:///var/www/html/roam/images/stars-bg.png);
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .sim-cards-col .sim-cards-search {
@@ -450,7 +476,12 @@ header .navigation .request-menus a span {
 }
 
 .destination-section .location-title-box {
+    width: 100%;
     align-self: self-start;
+}
+
+.destination-section .location-image-box {
+    width: 100%;
 }
 
 .destination-section .location-item {
@@ -704,6 +735,22 @@ span.inverted-comma.end-comma {}
 /** Testimonial Section **/
 
 /** eSim Section **/
+.esim-vector-three {
+    position: relative;
+}
+
+.esim-vector-three:before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 434px;
+    height: 566px;
+    background-image: url(file:///var/www/html/roam/images/Vector3.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 .esim-section .feature-items {
     display: flex;
     flex-wrap: wrap;
@@ -805,6 +852,18 @@ span.inverted-comma.end-comma {}
 
 .about-roam-section .headings-box {
     margin-bottom: 30px;
+    position: relative;
+}
+
+.about-roam-section .headings-box:before {
+    content: '';
+    position: absolute;
+    width: 153px;
+    height: 166px;
+    top: -120px;
+    right: 22px;
+    background-image: url(file:///var/www/html/roam/images/stars-bg.png);
+    background-repeat: no-repeat;
 }
 
 .about-roam-section .feature-des {
@@ -859,6 +918,9 @@ span.inverted-comma.end-comma {}
 .faqs-section .faqs-row {
     justify-content: space-between;
     margin-top: 50px;
+}
+.faqs-row .col-half {
+    z-index: 2;
 }
 
 .faqs-section .faqs-image {

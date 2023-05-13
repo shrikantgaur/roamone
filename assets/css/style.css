@@ -112,9 +112,10 @@ img {
 
 @media (max-width: 767px) {
 
+    .section-one:before,
     .sim-cards-col .cards-heading-box:before,
     .about-roam-section .headings-box:before {
-        background-image: inherit !important;
+        width: 0 !important;
     }
 
     .sim-cards-col .cards-item {
@@ -223,7 +224,8 @@ img {
         text-align: center;
     }
 
-    .col-half,.half-col {
+    .col-half,
+    .half-col {
         width: 100% !important;
     }
 
@@ -259,11 +261,13 @@ img {
     .navigation {
         width: 100%;
     }
+
     .faqs-section .faq-heading:before {
         top: -109px !important;
         right: 0 !important;
     }
-    .location-item:before{
+
+    .location-item:before {
         content: inherit !important;
     }
 }

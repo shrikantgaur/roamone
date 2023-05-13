@@ -272,6 +272,12 @@ img {
     }
 }
 
+@media (max-width: 414px){
+    .compatible-devices-section .model-item {
+        width: 100% !important;
+    }
+}
+
 @media (min-width: 1201px) {
     .container {
         max-width: 1182px;

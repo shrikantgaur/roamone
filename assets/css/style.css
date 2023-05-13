@@ -118,6 +118,10 @@ img {
         width: 0 !important;
     }
 
+    .bg-destination-vector:before,.esim-vector-three:before,.testimonial-vector-two:before,.section-one:before  {
+        width: 100% !important;
+    }
+
     .sim-cards-col .cards-item {
         width: 48%;
     }
@@ -272,7 +276,7 @@ img {
     }
 }
 
-@media (max-width: 414px){
+@media (max-width: 414px) {
     .compatible-devices-section .model-item {
         width: 100% !important;
     }

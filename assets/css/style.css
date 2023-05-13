@@ -74,6 +74,10 @@ h6 {
     font-size: 1rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -82,28 +86,193 @@ h6 {
     margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 390px) {
     .container {
-        max-width: 540px;
+        max-width: 100%;
+    }
+
+    .row {
+        padding: 0 15px;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
+@media (max-width: 1200px) {
+    .selling-heading {
+        max-width: 500px;
+        margin: 0 auto;
     }
 }
 
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
+@media (max-width: 991px) {
+
+    .about-roam-section .headings-box:before {
+        top: -10px !important;
     }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
+
+    .sim-cards-col .cards-heading-box:before,
+    .about-roam-section .headings-box:before {
+        background-image: inherit !important;
+    }
+
+    .sim-cards-col .cards-item {
+        width: 48%;
+    }
+
+    .sim-cards-col .cards-item img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .selling-feature-section .feature-item {
+        width: 48% !important;
+    }
+
+    .destination-section .location-item {
+        width: 48% !important;
+    }
+
+    .destination-section .location-items {
+        flex-wrap: wrap;
+    }
+
+    .esim-section .feature-item {
+        width: 48% !important;
+    }
+
+    .esim-section .feature-items {
+        flex-wrap: wrap;
+    }
+
+    .feature-inner img {
+        max-width: 66px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .sim-cards-col .cards-item {
+        width: 100%;
+    }
+
+    .sim-cards-col .search-fields {
+        width: 100% !important;
+    }
+
+    .selling-feature-section .feature-item {
+        width: 100% !important;
+    }
+
+    .selling-feature-section .featues-items {
+        align-items: center;
+    }
+
+    .selling-feature-section .feature-inner {
+        align-items: center;
+    }
+
+    .destination-section .destination-heading {
+        width: 100% !important;
+    }
+
+    .destination-section .destination-button {
+        width: 100% !important;
+        text-align: left !important;
+        margin-top: 20px;
+    }
+
+    .destination-more {
+        display: inline-block;
+    }
+
+    .destination-section .location-item {
+        width: 100% !important;
+    }
+
+    .testimonial-content {
+        width: 100% !important;
+        order: 2;
+    }
+
+    .testimonial-image {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .testimonial-destination {
+        margin-bottom: 50px;
+    }
+
+    .esim-section .feature-item {
+        width: 100% !important;
+    }
+
+    .compatible-devices-section .model-items {
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+
+    .compatible-devices-section .model-item {
+        width: 48% !important;
+        padding: 15px !important;
+    }
+
+    .compatible-image {
+        text-align: center;
+    }
+
+    .col-half,.half-col {
+        width: 100% !important;
+    }
+
+    .faqs-section .destination-button {
+        text-align: left !important;
+        margin-top: 20px;
+    }
+
+    .faqs-section .faqs-image {
+        text-align: center !important;
+    }
+
+    .footer-section .footer-column {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    .top-selling-section,
+    .selling-feature-section,
+    .destination-section,
+    .esim-section,
+    .compatible-devices-section,
+    .about-roam-section,
+    .faqs-section,
+    .testimonial-section {
+        padding: 60px 0;
+    }
+
+    .mobile-menus {
+        width: 100%;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+    .faqs-section .faq-heading:before {
+        top: -109px !important;
+        right: 0 !important;
+    }
+    .location-item:before{
+        content: inherit !important;
+    }
+}
+
+@media (min-width: 1201px) {
     .container {
         max-width: 1182px;
     }
+
 }
 
 .container-fullwidth {
@@ -494,7 +663,6 @@ header .navigation .request-menus a span {
 
 .destination-section .location-items {
     display: flex;
-    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -753,7 +921,6 @@ span.inverted-comma.end-comma {}
 
 .esim-section .feature-items {
     display: flex;
-    flex-wrap: wrap;
     gap: 22px;
 }
 
@@ -919,6 +1086,7 @@ span.inverted-comma.end-comma {}
     justify-content: space-between;
     margin-top: 50px;
 }
+
 .faqs-row .col-half {
     z-index: 2;
 }
